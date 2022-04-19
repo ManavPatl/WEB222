@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manav Bharatbhai Patel- WEB222 Final</title>
+    <link rel="stylesheet" href="css/normalize.css">		
+	<script src="js/product.js" ></script>
+
+</head>
+<body>
+    <header class="heading">	
+        <div class="Heading">
+        <img src="pic/seneca.png" alt="seneca" >	
+        <h1>WEB222 final assessment</h1>    
+        <nav>				
+            <a href="honesty.html">Welcome</a>
+            <a href="product.html">Product</a>    			
+            <a href="reflection.html">Reflection</a>
+        </nav>
+        </div>
+</header>
+
+    <div class="errormessage" id="errordata"></div>
+
+    <section  class="mainSection">
+        <div class="mainSectiondiv">
+            <form name="signup" action="https://httpbin.org/post" onsubmit="return fvalid(); "method="post">
+            <p>
+                    <label for="dataidA">Product ID:-</label>                    
+                    <input type="number" name="entry01" id="dataidA" required="required"> 
+                    <br><br>
+
+                    <label for="inputidB">Product Description:</label>   
+                    <textarea id="inputidB" name="inputidB" minlength=20 required="required"></textarea>
+                    <br><br>
+
+                    <label for="dataid">Price:</label>                    
+                    <input type="number" name="entry03" id="dataidC" title="Digit only, decimal not allowed" required="required"> 
+                    <br><br>
+
+                    <label for="dataidD">Supplier Username:</label>                    
+                    <input type="text" name="entry04" id="dataidD">
+                    <br><br>
+
+                    <label for="dataidE">Supplier Status:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <br>
+                    <br> 
+                        <label class="con">New Supplier&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" name="entry05" id="dataidE" >
+                            <span class="valbox"></span>
+                        </label>                      
+                        <label class="con">Contract Signed&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" name="entry05">
+                            <span class="valbox"></span>
+                        </label>                      
+                        <label class="con">Quality Tested  
+                            <input type="checkbox" name="entry05">
+                            <span class="valbox"></span>
+                       </label>                
+                    <br>
+                    <br><br>
+                
+                    <label for="dataidF">Supplier Email:</label>                    
+                    <input type="email" name="entry06" id="dataidF" required="required">
+
+                    <br>
+                    <br>
+                    
+                    <input type="hidden" name="lastName" id="lastName" value="Patel"/>
+                    <input type="hidden" name="studentId" id="studentId" value="144446200" />
+            </p>
+            <button class="button" type='reset' onclick=" err_vipe();" > 
+                Clear
+            </button> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <button class="button" type="submit">
+                submit
+            </button>
+            <br><br> 
+        </form>
+        </div>
+    </section>
+
+<footer>	  
+    <p> copyright&copy; Manav Bharatbhai Patel &nbsp;&nbsp;<a href="https://github.com/ManavPatl/WEB222.git">GitHub Link</a></p>
+</footer>
+</body>
+</html>
